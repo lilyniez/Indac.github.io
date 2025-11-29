@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio Login</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css" rel="stylesheet">
+</head>
+<body>
+
+    <!-- LOGIN PAGE -->
+    <div id="login-page" class="login-container">
+        <h2>Login</h2>
+
+        <input type="text" id="username" placeholder="Enter username">
+        <input type="password" id="password" placeholder="Enter password">
+
+        <button onclick="login()">Login</button>
+    </div>
+
+    <!-- PORTFOLIO PAGE -->
+    <div id="portfolio-page" style="display: none;">
+
+        <!-- NAVIGATION BAR -->
+        <header>
+            <a class="logo">Portfolio</a>
+
+            <ul class="nav">
+                <li><a href="#home" class="active">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#services">Services</a></li>
+                <li><a href="#portfolio">Portfolio</a></li>
+                <li><a href="#" onclick="Logout()">Logout</a></li>
+            </ul>
+        </header>
+
+        <!-- HOME SECTION -->
+        <section class="home" id="home">
+
+            <div class="home-content">
+                <h3>Hello!, my name is<h3>
+                <h1>Acelyn Mae C. Indac<h1>
+                              <h3 class="subtitle">I'm a <span>Web Developer</span> </h3>
+
+                <p class="quote">
+                   "May He give you the desire of your heart and make all your plans succeed." Psalm 20.4
+                </p>
+            </div>
+
+            <div class="home-img">
+                <img src=https://scontent.fceb1-3.fna.fbcdn.net/v/t39.30808-6/590077703_2113828272485056_72439893484377221_n.jpg?_nc_cat=104&ccb=1-7&_nc_sid=6ee11a&_nc_eui2=AeEERGCwDbutc1JNhKjTXU2dbNnJcVLatDNs2clxUtq0M9S7Di-nSJH08e_08UqLQSStPCRK0tDkzzGv1wK737Dq&_nc_ohc=2X_2oGmOpT8Q7kNvwEawcdd&_nc_oc=AdkfAy7CocqigMMXTRFubfU2uORrpypwny5O2h8ZjZ1QSYmkRQM4Kq3OD_9wKS5DOY4&_nc_zt=23&_nc_ht=scontent.fceb1-3.fna&_nc_gid=TwT3G0Ex1hX0_C0vtrE2vA&oh=00_AfingdgKyw6w2nj4ECl2hTP_FL02rJctflh0Cb3uD0V3Ew&oe=6930BBB1 class="home-img">
+
+            </div>
+
+        </section>
+
+
+        <!-- ABOUT SECTION -->
+        <section class="about" id="about">
+            <h2 class="section-title">About Me</h2>
+
+            <div class="about-container">
+                <img src=https://scontent.fceb1-1.fna.fbcdn.net/v/t39.30808-6/480522937_1886180705249815_3588974707962704032_n.jpg?_nc_cat=105&ccb=1-7&_nc_sid=a5f93a&_nc_eui2=AeHXaksY_SX67cTzFXbXnYAuZWUtNhaCsLVlZS02FoKwtaK08ufecBAMjrtzdGce7SlaI30YJUOsGUxTwSmJ7_eD&_nc_ohc=0ywR4Y-K0hEQ7kNvwHrfxIt&_nc_oc=AdmLAM6W7PaujBm6P4jHlwlz9-1CdCkreannwuLSDlyNaK5pkLSGkqUhGHx3CldpMiE&_nc_zt=23&_nc_ht=scontent.fceb1-1.fna&_nc_gid=APqKVFqA7raMtoOAvXNZDA&oh=00_AfhRJq9sC6qWP24ZDWWze_dhJHqTTgw5XTq6xXTd3BaLbA&oe=693095F0 class="about-img">.
+
+
+                <div class="about-text">
+                    <h2>
+                    Name: Acelyn Mae C. Indac
+                    </h2>
+                    <p>
+                    <b>Age: </b>18 years old.
+                    </p>
+                    <p>
+                    <b>Birthday: </b>April 1, 2007.
+                    </p>
+                    <p>
+                    <b>Address: </b>Purok-2 Brgy.Sto.Rosario Magallanes Agusan Del Norte.
+                    </p>
+                    <p>
+                    <b>Course: </b>Bachelor of Science in Information Technology.
+                    </p>
+                    <p>
+                    <b>Hobbies: </b>I like to watch movies/kdrama and cooking.
+                    </p>
+                    <p>
+                    <b>Favorite Food: </b>fried chicken, afritada, mango float, carbonara
+                    </p>
+                   
+                </div>
+            </div>
+        </section>
+
+
+        <!-- SERVICES SECTION -->
+        <section class="services" id="services">
+            <h2 class="section-title">My Services</h2>
+
+            <div class="service-boxes">
+
+                <div class="service-box">
+                    <i class='bx bx-code-alt'></i>
+                    <h3>Website</h3>
+                    <p>I'm still learning how to create better website layouts.</p>
+                </div>
+
+                <div class="service-box">
+                    <i class='bx bx-paint'></i>
+                    <h3>Design</h3>
+                    <p>I design powerpoint presentations and style them with creativity.</p>
+                </div>
+
+                <div class="service-box">
+                    <i class='bx bx-camera'></i>
+                    <h3>Photography</h3>
+                    <p>I capture aesthetic pictures and use them for personal or project use.</p>
+                </div>
+
+            </div>
+        </section>
+
+
+        <!-- PORTFOLIO SECTION -->
+        <section class="Portfolio" id="Portfolio">
+            <h2 class="section-title">My Portfolio</h2>
+
+            <div class="Portfolio-gallery">
+
+                <div class="Portfolio-item">
+                    <img src="https://via.placeholder.com/300">
+                    <h4>Project 1</h4>
+                </div>
+
+                <div class="Portfolio-item">
+                    <img src="https://via.placeholder.com/300">
+                    <h4>Project 2</h4>
+                </div>
+
+                <div class="Portfolio-item">
+                    <img src="https://via.placeholder.com/300">
+                    <h4>Project 3</h4>
+                </div>
+
+            </div>
+        </section>
+
+    </div>
+
+    <script>
+        function login() {
+            document.getElementById("login-page").style.display = "none";
+            document.getElementById("portfolio-page").style.display = "block";
+        }
+
+        function logout() {
+            document.getElementById("portfolio-page").style.display = "none";
+            document.getElementById("login-page").style.display = "flex";
+        }
+    </script>
+
+</body>
+
+</html>
